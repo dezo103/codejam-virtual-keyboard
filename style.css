@@ -1,1 +1,59 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.wrapper {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: teal;
+}
+
+.textarea {
+  display: block;
+  width: 50%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.keyboard {
+  width: 58%;
+  margin: 20px auto;
+  background: gray;
+  border-radius: 3px;
+}
+
+.keyboard__keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+.keyboard__key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5.2%;
+  cursor: pointer;
+  margin: 5px;
+  height: 40px;
+  background: lightgray;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+}
+
+.keyboard__key_double {
+  width: 10%;
+}
+
+.keyboard__key_space {
+  width: 37%;
+}
+/*# sourceMappingURL=style.css.map */

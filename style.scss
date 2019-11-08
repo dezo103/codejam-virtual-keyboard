@@ -1,0 +1,50 @@
+.wrapper {
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    background: teal;
+}
+
+.textarea {
+    display: block;
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.keyboard {
+    width: 58%;
+    margin: 20px auto;
+    background: gray;
+    border-radius: 3px;
+
+    &__keys {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    &__key {
+        display: flex;
+        width: 5.2%;
+        cursor: pointer;
+        margin: 5px;
+        height: 40px;
+        background: lightgray;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+
+        &_double {
+            width: 10%;
+        }
+
+        &_space {
+            width: 37%;
+        }
+    }
+}
+
+
