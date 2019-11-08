@@ -45,6 +45,17 @@ for (let i=0; i<63; i++) {
     divKeyboardKeys.append(divKeyboardKey);
 }
 
+// divKeyboardKeys.addEventListener('click', function(event) {
+//     console.log(event);
+// })
+let currentKeys = '';
+document.addEventListener('keydown', (event)=>{ 
+    currentKeys =  currentKeys + event.key; 
+    document.querySelector('.textarea').value = currentKeys;
+})
+
+
+
 
 
 
