@@ -56,4 +56,12 @@
 .keyboard__key_space {
   width: 37%;
 }
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+.active-key {
+  background-color: blueviolet;
+}
 /*# sourceMappingURL=style.css.map */
