@@ -62,6 +62,10 @@
 }
 
 .active-key {
-  background-color: blueviolet;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  background-color: royalblue;
 }
 /*# sourceMappingURL=style.css.map */

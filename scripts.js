@@ -52,9 +52,6 @@ for (let i=0; i<63; i++) {
     divKeyboardKeys.append(divKeyboardKey);
 }
 
-// divKeyboardKeys.addEventListener('click', function(event) {
-//     console.log(event);
-// })
 let currentKeys = '';
 document.addEventListener('keydown', (event)=>{ 
     
@@ -104,36 +101,43 @@ document.addEventListener('keydown', (event)=>{
           break;
       }
 
-    //   console.log(event.code);
+    
 
     let elementForAnimate = document.querySelector(`div[data-event-code=${event.code}]`);
-    // console.log(elementForAnimate);
-    elementForAnimate.classList.toggle('active-key');
+    
+    elementForAnimate.classList.add('active-key');
     
 });
 
 document.addEventListener('keyup', (event)=>{
     let elementForAnimate = document.querySelector(`div[data-event-code=${event.code}]`);
-    // console.log(elementForAnimate);
-    elementForAnimate.classList.toggle('active-key');
+    
+    elementForAnimate.classList.remove('active-key');
 });
 
 
 
+document.addEventListener('mousedown', (event)=>{
+    let target = event.target;
+    target.classList.add('active-key');
+});
 
+document.addEventListener('mouseup', (event)=>{
+    let target = event.target;
+    target.classList.remove('active-key');
+});
 
-// document.addEventListener('keyup', (event)=>{
-//     switch(event.key) {
-        
-//         case 'Shift':
-//             let eachKey = document.querySelectorAll('.keyboard__key');
-//             eachKey.forEach((elem)=>{
-//                 elem.classList.toggle('to-uppercase');
-//             });
-//             break;
-    
-//       }
+// document.addEventListener('click', (event)=>{
+//     let target = event.target;
+//     let targetAttribute = (target.getAttribute('data-event-code'));
+//     console.log(targetAttribute);//keyT
+//     targetAttribute.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, false);
 // });
+
+
+
+// Хочу симулировать нажатие клавиши, но не получается
+
 
 
 
