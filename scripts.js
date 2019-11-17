@@ -127,16 +127,6 @@ document.addEventListener('mouseup', (event)=>{
     target.classList.remove('active-key');
 });
 
-// document.addEventListener('click', (event)=>{
-//     let target = event.target;
-//     let targetAttribute = (target.getAttribute('data-event-code'));
-//     console.log(targetAttribute);//keyT
-//     targetAttribute.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, false);
-// });
-
-
-
-// Хочу симулировать нажатие клавиши, но не получается
 
 
 
